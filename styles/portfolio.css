@@ -66,7 +66,8 @@ nav a {
 /* header related styles */
 .header {
   background-color: #fff8f3;
-  background-image: url("../images/header_bg.png"), url('../images/developer.png');
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
   background-position: bottom right, top left;
 }
@@ -95,8 +96,6 @@ nav a {
   margin-top: 5px;
   margin-bottom: 20px;
 }
-
-
 
 /* main section styles */
 main {
@@ -152,49 +151,92 @@ main section {
   font-weight: 700;
 }
 
-.resume-item-title{
-    color: #474747;
-    font-size: 25px;
-    font-weight: 700;
+.resume-item-title {
+  color: #474747;
+  font-size: 25px;
+  font-weight: 700;
 }
 
-.resume-container{
-    display: flex;
-    gap: 50px;
+.resume-container {
+  display: flex;
+  gap: 50px;
 }
 
-.resume-item-institute, .resume-item-description{
-    color: #757575;
+.resume-item-institute,
+.resume-item-description {
+  color: #757575;
 }
 
-.download-cv{
-    text-align: center;
+.download-cv {
+  text-align: center;
 }
 
 /* footer style */
 
-footer{
-    display: flex;
-    gap: 100px;
-    background: #fff8f3;
-    margin-top: 100px;
-    padding: 130px 200px;
+footer {
+  display: flex;
+  gap: 100px;
+  background: #fff8f3;
+  margin-top: 100px;
+  padding: 130px 200px;
 }
 
-.footer-column{
-    width: 50%;
+.footer-column {
+  width: 50%;
 }
-.social-links a{
-    margin-right: 25px;
+.social-links a {
+  margin-right: 25px;
 }
 
-.contact input[type="text"], .contact input[type="email"], textarea{
-    display: block;
-    margin-bottom: 25px;
-    padding: 18px 35px;
-    color: #757575;
-    border-radius: 5px;
-    background: #fff;
-    border: 0;
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+  display: block;
+  margin-bottom: 25px;
+  padding: 18px 35px;
+  color: #757575;
+  border-radius: 5px;
+  background: #fff;
+  border: 0;
+  width: 100%;
+}
+
+/* Responsive styles */
+
+ /* for mobile device */
+
+ @media screen and (max-width: 576px){
+  nav, nav > ul, .banner, .skills-container, .resume-container, .about-info-container, footer{
+    flex-direction: column;
+  }
+
+  nav > ul {
+    gap: 10px;
+  }
+
+  .banner .profile-picture{
     width: 100%;
+  }
+
+  .banner, #what-i-do-description{
+    padding: 20px;
+  }
+
+footer, .about {
+  padding: 10px;
 }
+
+.btn-primary{
+  margin-bottom: 15px;
+}
+.footer-column{
+  width: 100%;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+textarea{
+  width: 80%;
+}
+
+ }
